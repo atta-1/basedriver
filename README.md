@@ -26,6 +26,12 @@ projects, which extend the image with Webdriver servers:
 - [blueimp/geckodriver](https://github.com/blueimp/geckodriver) (Firefox
   Webdriver)
 
+## Build
+
+```shell
+docker buildx build --platform linux/amd64,linux/arm64 --push -t ghcr.io/atta-1/basedriver:bookworm .
+```
+
 ## Software
 
 The following software is included in the `blueimp/basedriver` image:
