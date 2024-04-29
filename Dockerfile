@@ -2,7 +2,9 @@
 # Base Webdriver Dockerfile
 #
 
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
+
+LABEL org.opencontainers.image.description "Base image for running and debugging webdriver implementations"
 
 # Install the base requirements to run and debug webdriver implementations:
 RUN export DEBIAN_FRONTEND=noninteractive \
